@@ -1,0 +1,20 @@
+{
+    "name": "Activity Tracker Extension",
+    "version": "1.0",
+    "description": "A basic extension",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+      
+    },
+    "permissions": [
+      "activeTab"
+    ],
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
